@@ -1,0 +1,48 @@
+<div class="page__blur">
+  <div class="page__wrapper page__tree">
+    <div class="leftblock">
+      <div class="leftblock__item">
+        <button class="settings__btn settings__mute"></button>
+        <button class="settings__btn settings__snow"></button>
+      </div>
+      <div class="leftblock__item select-tree">
+        <p class="block__title">Select a Christmas tree</p>
+        <div class="select-tree__items"></div>
+      </div>
+      <div class="leftblock__item select-background">
+        <p class="block__title">Select a background</p>
+        <div class="select-background__items"></div>
+      </div>
+      <div class="leftblock__item select-garland">
+        <p class="block__title">Select a garland</p>
+        <div class="garland">
+          <div class="garland__items">
+            <button class="garland__item garland__item_multi" data-color="multi"></button>
+            <button class="garland__item garland__item_green" data-color="yellowgreen"></button>
+            <button class="garland__item garland__item_red" data-color="red"></button>
+            <button class="garland__item garland__item_blue" data-color="blue"></button>
+            <button class="garland__item garland__item_yellow" data-color="yellow"></button>
+            <button class="garland__item garland__item_white" data-color="white"></button>
+          </div>
+        </div>
+      </div>
+      <button class="reset__btn leftblock__reset" id="resetSettingsButton">Reset settings</button>
+    </div>
+    <div class="tree">
+      <div class="garland-container"></div>
+      <div class="tree__container">
+        <img class="tree__image" alt="Christmas tree" usemap="#tree__area">
+        <map id="tree__area" name="tree__area">
+          <area shape="poly" coords="223, 40, 273, 40, 465, 600, 435, 650, 140, 650, 50, 600">
+        </map>
+      </div>
+      
+    </div>
+    <div class="right-block">
+      <div class="select-toys">
+        <p class="block__title">Toys</p>
+        <div class="select-toys__items"></div>
+      </div>
+    </div>
+  </div>
+</div>

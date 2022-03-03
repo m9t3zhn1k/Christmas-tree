@@ -1,0 +1,99 @@
+<div class="page__blur">
+  <div class="page__wrapper page__toys">
+    <div class="settings">
+      <div class="setting__item settings__modes">
+        <button class="settings__btn settings__mute"></button>
+        <button class="settings__btn settings__snow"></button>
+        <input autofocus autocomplete="off" type="search" class="toys-search" placeholder="Enter name for searching...">
+      </div>
+      <div class="setting__item settings__show-all-btn">
+        <h3 class="setting__title">Show all toys</h3>
+        <div class="favorites__item">
+          <input class="setting__input" type="checkbox" id="showAllToys" value="showAll">
+          <label class="setting__label" for="showAllToys"></label>
+        </div>
+      </div>
+      <div class="setting__item settings__sorting sorting">
+        <h3 class="setting__title">Sorting</h3>
+        <select class="sorting__select">
+          <option value="byNameToEnd" selected>By name from "A" to "Z"</option>
+          <option value="byNameToStart">By name from "Z" to "A"</option>
+          <option value="byQuantityToMax">By quantity to max</option>
+          <option value="byQuantityToMin">By quantity to min</option>
+          <option value="byYearToMax">By year to max</option>
+          <option value="byYearToMin">By year to min</option>
+        </select>
+      </div>
+      <div class="setting__item settings__filter-by-shape">
+        <h3 class="setting__title">Shape</h3>
+        <div class="shape__items">
+          <button class="shape__item shape__item_round" data-shape="ball">Ball</button>
+          <button class="shape__item shape__item_figure" data-shape="figure">Figure</button>
+          <button class="shape__item shape__item_cone" data-shape="cone">Cone</button>
+          <button class="shape__item shape__item_showflake" data-shape="snowflake">Snowflake</button>
+          <button class="shape__item shape__item_bell" data-shape="bell">Bell</button>
+        </div>
+        </div>
+      <div class="setting__item settings__filter-by-quantity">
+        <h3 class="setting__title">Quantity of toys</h3>
+        <div id="settings__range-by-quantity"></div>
+        <div class="settings__range-results-container">
+          <span class="range-by-quantity-results__left"></span>
+          <span class="range-by-quantity-results__right"></span>
+        </div>
+      </div>
+      <div class="setting__item settings__filter-by-year">
+        <h3 class="setting__title">Year of purchase</h3>
+        <div id="settings__range-by-year"></div>
+        <div class="settings__range-results-container">
+          <span class="range-by-year-results__left"></span>
+          <span class="range-by-year-results__right"></span>
+        </div>
+      </div>
+      <div class="setting__item settings__filter-by-color">
+        <h3 class="setting__title">Color</h3>
+        <div class="color__items">
+          <button class="color__item color__item_yellow" data-color="yellow"></button>
+          <button class="color__item color__item_green" data-color="green"></button>
+          <button class="color__item color__item_red" data-color="red"></button>
+          <button class="color__item color__item_white" data-color="white"></button>
+          <button class="color__item color__item_blue" data-color="blue"></button>
+        </div>
+      </div>
+      <div class="setting__item settings__filter-by-size">
+        <h3 class="setting__title">Size</h3>
+        <div class="size__items">
+          <div class="size__item">
+            <input class="setting__input" type="checkbox" id="toySizeLarge" value="large">
+            <label class="setting__label setting__size-label" data-size="large" for="toySizeLarge">Large</label>
+          </div>
+          <div class="size__item">
+            <input class="setting__input" type="checkbox" id="toySizeMedium" value="medium">
+            <label class="setting__label setting__size-label" data-size="medium" for="toySizeMedium">Medium</label>
+          </div>
+          <div class="size__item">
+            <input class="setting__input" type="checkbox" id="toySizeSmall" value="small">
+            <label class="setting__label setting__size-label" data-size="small" for="toySizeSmall">Small</label>
+          </div>
+        </div>
+      </div>
+      <div class="setting__item settings__filter-by-favorites">
+        <h3 class="setting__title">Only favorites</h3>
+        <div class="favorites__item">
+          <input class="setting__input" type="checkbox" id="toyFavorites" value="Favorites">
+          <label class="setting__label setting__favorite-label" for="toyFavorites"></label>
+        </div>
+      </div>
+      <div class="setting__item settings__reset">
+        <button class="reset__btn" id="resetFiltersButton">Reset filters</button>
+        <button class="reset__btn" id="resetSettingsButton">Reset settings</button>
+      </div>
+    </div>
+    <div class="toys-container">
+    </div>
+  </div>
+</div>
+<div class="body__snowflakes">
+  <div class="body__snowflakes_snow1"></div>
+  <div class="body__snowflakes_snow2"></div>
+</div>

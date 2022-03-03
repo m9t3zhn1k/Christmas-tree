@@ -1,0 +1,82 @@
+.toy {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.toy-large {
+  width: 500px;
+  height: 500px;
+  left: calc(50% - 550px);
+  top: 150px;
+  background-image: url(../../assets/ball/1.webp);
+}
+.toy-small {
+  width: 300px;
+  height: 300px;
+  left: calc(50% + 150px);
+  top: 150px;
+  background-image: url(../../assets/ball/2.webp);
+}
+.toy-small::before {
+  content: "";
+  position: absolute;
+  background-color: var(--grey);
+  top: -90px;
+  left: calc(50% - 32px);
+  height: 95px;
+  width: 5px;
+}
+.toy-large::before {
+  content: "";
+  position: absolute;
+  background-color: var(--grey);
+  top: -90px;
+  left: calc(50% - 48px);
+  height: 95px;
+  width: 5px;
+}
+.home__content {
+  font-family: 'Neucha';
+  margin: 30vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__title {
+  width: 600px;
+  height: 250px;
+  font-size: 4rem;
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+  background-color: var(--background-color-light);
+  backdrop-filter: blur(10px);
+  letter-spacing: 0.25rem;
+  line-height: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 10vh 0;
+  user-select: none;
+}
+.home__btn {
+  font-family: inherit;
+  position: relative;
+  width: 320px;
+  height: 54px;
+  border: 2px solid var(--border-color);
+  border-radius: 27px;
+  background-color: var(--background-color-light);
+  backdrop-filter: blur(10px);
+  font-size: 22px;
+  color: white;
+  transition: all 0.25s;
+}
+.home__btn:hover {
+  border: 2px solid var(--element-hover-border-color);
+  background-color: var(--background-button-hover);
+  cursor: pointer;
+}
+.home__btn:hover {
+  cursor: pointer;
+}

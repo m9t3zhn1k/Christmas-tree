@@ -1,0 +1,18 @@
+:root {
+  --background-color: #101f1d;
+  --navbar-hover-color: #65a773;
+  --green-hover-color-filter: invert(58%) sepia(12%) saturate(1152%) hue-rotate(81deg) brightness(100%) contrast(94%);
+  --border-color: #278D9F;
+  --background-color-light: #1f707f4d;
+  --background-button-hover: #113c4466;
+  --background-button-hover-light: #113c44b3;
+  --background-button-active: #113c4400;
+  --shadow-color: #ffffff1a;
+  --shadow-color-garland: #c0e2a5cc;
+  --grey: #aaa;
+  --color-mark: #222222;
+  --active-icon-color: invert(34%) sepia(77%) saturate(1130%) hue-rotate(155deg) brightness(84%) contrast(81%);
+  --hover-icon-color: invert(8%) sepia(74%) saturate(494%) hue-rotate(137deg) brightness(93%) contrast(101%);
+  --element-hover-border-color: #58d7ee;
+  --element-active-border-color: #c4f6ff;
+}

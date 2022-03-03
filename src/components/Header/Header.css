@@ -1,0 +1,55 @@
+.header__wrapper {
+  max-width: 1720px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  margin: 0 auto;
+  font-family: 'Neucha';
+  user-select: none;
+}
+.navbar__list {
+  display: flex;
+}
+.navbar__item {
+  font-size: 2rem;
+  line-height: 4rem;
+  padding: 5px;
+  transition: all 0.25s;
+}
+.navbar__item:not(:last-child) {
+  margin: 0 40px 0 0;
+}
+.navbar__item:hover {
+  color: var(--navbar-hover-color);
+  cursor: pointer;
+}
+.navbar__item:hover .logo{
+  filter: var(--green-hover-color-filter);
+}
+.navbar__link {
+  display: inline-block;
+  height: 100%;
+}
+.logo {
+  display: inline-block;
+  background: url('../../assets/svg/tree.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30px;
+  height: 100%;
+  transition: all 0.25s;
+}
+.toys-counter {
+  width: 35px;
+  height: 35px;
+  transition: all 0.25s;
+  background-color: var(--background-color-light);
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border-color);
+}

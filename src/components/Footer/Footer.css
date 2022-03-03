@@ -1,0 +1,37 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1720px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+.footer__item {
+  display: inline-block;
+  height: 60px;
+}
+.footer__year {
+  line-height: 60px;
+  font-family: 'Neucha';
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  user-select: none;
+}
+.footer__rs-logo {
+  height: 40px;
+  width: 100px;
+  background: url("../../assets/svg/rss.svg") no-repeat center center; 
+  background-size: contain;
+  transition: all 0.25s;
+}
+.footer__github {
+  height: 40px;
+  width: 40px;
+  background: url("../../assets/svg/github.svg") no-repeat center center; 
+  background-size: contain;
+  transition: all 0.25s;
+}
+.footer__rs-logo:hover,
+.footer__github:hover {
+  filter: var(--green-hover-color-filter);
+}

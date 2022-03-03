@@ -1,0 +1,138 @@
+@import 'fonts.css';
+@import 'palette.css';
+
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: content-box;
+  outline: none;
+}
+ul, ol, li {
+  list-style: none;
+}
+html, body {
+  height: 100%;
+  line-height: 125%;
+  font-size: 12px;
+  font-family: 'Neucha';
+  font-weight: 400;
+  color: white;
+}
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+button {
+  background-color: transparent;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+input[type=text]::-ms-clear {  display: none; width: 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width: 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+.wrapper {
+  background-image: url('../assets/bg.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  height: 60px;
+  background: var(--background-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.page {
+  position: relative;
+  padding: 60px 0;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+.page__blur {
+  flex: 1 1 auto;
+  backdrop-filter: blur(3px);
+  padding: 15px 30px;
+}
+.page__wrapper {
+  max-width: 1720px;
+  margin: 0 auto;
+}
+.footer {
+  height: 60px;
+  background: var(--background-color);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.body__snowflakes {
+  visibility: hidden;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+.body__snowflakes_snow1 {
+  background-image: url('../assets/snow/snow1.png');
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: snow1 40s linear infinite;
+}
+.body__snowflakes_snow2 {
+  background-image: url('../assets/snow/snow2.png'), url('../assets/snow/snow3.png');
+  animation: snow2 20s linear infinite;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.body__snowflakes.active {
+  visibility: visible;
+}
+@keyframes snow2 {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 10% 800px, 10% 800px;
+  }
+}
+@keyframes snow1 {
+  from {
+    background-position: 0 -300px;
+  }
+  20% {
+    background-position: 20% -100px;
+  }
+  40% {
+    background-position: 30% 100px;
+  }
+  to {
+    background-position: 20% 800px;
+  }
+}
